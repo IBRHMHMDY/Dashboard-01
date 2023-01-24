@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dashboard 1</title>
+   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="assets/css/styles-rtl.css">
+</head>
+<body>
+   <div class="container">
+      <!-- Aside -->
+      <aside>
+         <div class="top">
+            <div class="logo">
+               <h2>SELF <span class="danger">STUDY</span></h2>
+            </div>
+            <div class="close" id="btn-close">
+               <span class="material-symbols-sharp">close</span>
+            </div>
+         </div>
+         <div class="sidebar">
+            <a href="#" class="active">
+               <span class="material-symbols-sharp">dashboard</span>
+               <h3>الرئيسية</h3>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">person</span>
+               <h3>العملاء</h3>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">receipt_long</span>
+               <h3>الطلبات</h3>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">analytics</span>
+               <h3>الإحصائيات</h3>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">mail_outline</span>
+               <h3>الرسائل</h3>
+               <span class="badge-count">26</span>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">inventory</span>
+               <h3>المنتجات</h3>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">report</span>
+               <h3>التقارير</h3>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">settings</span>
+               <h3>الإعدادات</h3>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">add</span>
+               <h3>إضافة منتج</h3>
+            </a>
+            <a href="#">
+               <span class="material-symbols-sharp">logout</span>
+               <h3>خروج</h3>
+            </a>
+         </div>
+      </aside>
+      <!-- End Aside -->
+      <!-- Main Section -->
+      <main>
+         <h1>الرئيسية</h1>
+         <div class="date">
+            <input type="date">
+         </div>
+         <!-- Insights -->
+         <div class="insights">
+            <!-- Sales -->
+            <div class="sales">
+               <span class="material-symbols-sharp">analytics</span>
+               <div class="middle">
+                  <div class="left">
+                     <h3>إجمالى المبيعات</h3>
+                     <h1>$15,045</h1>
+                  </div>
+                  <div class="progress">
+                     <svg>
+                        <circle cx="38" cy="38" r="36"></circle>
+                     </svg>
+                     <div class="percent">
+                        <p>81%</p>
+                     </div>
+                  </div>
+               </div>
+               <small class="text-muted">آخر 24 ساعة</small>
+            </div>
+            <!-- End Sales -->
+            <!-- Expenses -->
+            <div class="expenses">
+               <span class="material-symbols-sharp">bar_chart</span>
+               <div class="middle">
+                  <div class="left">
+                     <h3>إجمالى المصروفات</h3>
+                     <h1>$62,000</h1>
+                  </div>
+                  <div class="progress">
+                     <svg>
+                        <circle cx="38" cy="38" r="36"></circle>
+                     </svg>
+                     <div class="percent">
+                        <p>42%</p>
+                     </div>
+                  </div>
+               </div>
+               <small class="text-muted">آخر 24 ساعة</small>
+            </div>
+            <!-- End Expenses -->
+            <!-- Incomes -->
+            <div class="incomes">
+               <span class="material-symbols-sharp">stacked_line_chart</span>
+               <div class="middle">
+                  <div class="left">
+                     <h3>إجمالى الإيرادات</h3>
+                     <h1>$10,655</h1>
+                  </div>
+                  <div class="progress">
+                     <svg>
+                        <circle cx="38" cy="38" r="36"></circle>
+                     </svg>
+                     <div class="percent">
+                        <p>75%</p>
+                     </div>
+                  </div>
+               </div>
+               <small class="text-muted">آخر 24 ساعة</small>
+            </div>
+            <!-- End Incomes -->
+         </div>
+         <!-- End Insights -->
+         <!-- Recent Orders -->
+         <div class="recent-orders">
+            <h2>الطلبات الحالية</h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>إسم المنتج</th>
+                     <th>رقم المنتج</th>
+                     <th>المدفوع</th>
+                     <th>الحالة</th>
+                     <th></th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Your Product 01</td>
+                     <td>5000</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 02</td>
+                     <td>78515</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 03</td>
+                     <td>95621</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 04</td>
+                     <td>800</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 05</td>
+                     <td>500</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 06</td>
+                     <td>60100</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 07</td>
+                     <td>50000</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 08</td>
+                     <td>5000</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 09</td>
+                     <td>25000</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+                  <tr>
+                     <td>Your Product 10</td>
+                     <td>86000</td>
+                     <td>Due</td>
+                     <td class="warning">الإنتظار</td>
+                     <td class="primary">التفاصيل</td>
+                  </tr>
+               </tbody>
+            </table>
+            <a href="#">عرض الكل</a>
+         </div>
+         <!-- End Recent Orders -->
+      </main>
+      <!-- End: Main Section -->
+      <!-- Right Section -->
+      <div class="right">
+         <!-- Top -->
+         <div class="top">
+            <a href="index.html" class="change-lang">EN</a>
+            <button id="btn-menu">
+               <span class="material-symbols-sharp">menu</span>
+            </button>
+            <div class="theme-toggler">
+               <span class="material-symbols-sharp light-mode">light_mode</span>
+               <span class="material-symbols-sharp dark-mode">dark_mode</span>
+            </div>
+            <div class="profile">
+               <div class="info">
+                  <p>مرحبا, <b>إبراهيم</b></p>
+                  <small class="text-muted">مدير</small>
+               </div>
+               <div class="profile-photo">
+                  <img src="assets/images/Profile-1.jpg" alt="profile">
+               </div>
+            </div>
+         </div>
+         <!-- End Top -->
+         <!-- Recent Updates -->
+         <div class="recent-updates">
+            <h2>التحديثات الحالية</h2>
+            <div class="updates">
+               <div class="update">
+                  <div class="profile-photo">
+                     <img src="assets/images/Profile-2.jpg" alt="">
+                  </div>
+                  <div class="message">
+                     <p><b>Maya Tyson</b> مرسل طلب لشراء كاميرا Drone.</p>
+                     <small class="text-muted">منذ 2 دقائق</small>
+                  </div>
+               </div>
+               <div class="update">
+                  <div class="profile-photo">
+                     <img src="assets/images/Profile-3.jpg" alt="">
+                  </div>
+                  <div class="message">
+                     <p><b>John Wek</b>مرسل طلب لشراء كاميرا Canon.</p>
+                     <small class="text-muted">منذ 10 دقائق</small>
+                  </div>
+               </div>
+               <div class="update">
+                  <div class="profile-photo">
+                     <img src="assets/images/Profile-4.jpg" alt="">
+                  </div>
+                  <div class="message">
+                     <p><b>Tala Smith</b> received his Order of night lion tech GPS Drone.</p>
+                     <small class="text-muted">منذ ساعة واحدة</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Recent Updates -->
+         <div class="sales-analytics">
+            <h2>إحصائيات المبيعات</h2>
+            <div class="item online">
+               <div class="icon">
+                  <span class="material-symbols-sharp">shopping_cart</span>
+               </div>
+               <div class="right">
+                  <div class="info">
+                     <h3>Online الطلبات</h3>
+                     <small class="text-muted">آخر 24 ساعة</small>
+                  </div>
+                  <h5 class="success">+39%</h5>
+                  <h3>3354</h3>
+               </div>
+            </div>
+            <div class="item offline">
+               <div class="icon">
+                  <span class="material-symbols-sharp">local_mall</span>
+               </div>
+               <div class="right">
+                  <div class="info">
+                     <h3>Offline Orders</h3>
+                     <small class="text-muted">آخر 24 ساعة</small>
+                  </div>
+                  <h5 class="danger">-17%</h5>
+                  <h3>1100</h3>
+               </div>
+            </div>
+            <div class="item customers">
+               <div class="icon">
+                  <span class="material-symbols-sharp">person</span>
+               </div>
+               <div class="right">
+                  <div class="info">
+                     <h3>New Customer</h3>
+                     <small class="text-muted">آخر 2 يوم</small>
+                  </div>
+                  <h5 class="success">+25</h5>
+                  <h3>500</h3>
+               </div>
+            </div>
+            <div class="item add-product">
+               <div>
+                  <span class="material-symbols-sharp">add</span>
+                  <h3>إضافة منتج</h3>
+               </div>
+            </div>
+         </div>
+         <!-- Sales Analytics -->
+         <!-- End Sales Analytics -->
+      </div>
+      <!-- End: Right Section -->
+   </div>
+   <!-- Scripts -->
+   <script src="assets/js/scripts.js"></script>
+</body>
+</html>
