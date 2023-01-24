@@ -1,0 +1,122 @@
+
+/* ------------------- Sidebar ------------------- */
+aside .sidebar a{
+   margin-right: 2rem;
+}
+
+aside .sidebar a.active{
+   margin-left: 0;
+}
+
+aside .sidebar a.active span{
+   margin-left: calc(1rem - 6px);
+}
+
+aside .sidebar a:hover span{
+   margin-left: 1rem;
+}
+/* ------------------- End Sidebar ------------------- */
+
+/* ------------------- Main > Insights ------------------- */
+main .insights .percent{
+   transform: translate(-5px, -2px);
+}
+/* ------------------- End Insights ------------------- */
+
+
+
+/* ============================================================================================ */
+/* -------------------<< Media Queries >>------------------- */
+/* -------------------<< Media Queries [Big Tablets & Small Laptops] >>------------------- */
+@media screen and (max-width: 1200px){
+
+   main .insights{
+      grid-template-columns: 1fr;
+   }
+   main .recent-orders{
+      width: 70% !important;
+      margin: 2rem 0 0 0 !important;
+   }
+
+
+}
+/* -------------------<< End Media Queries [Big Tablets & Small Laptops] >>------------------- */
+/* -------------------<< Media Queries [Smaller Tablets & Mobiles] >>------------------- */
+@media screen and (max-width: 768px){
+   aside{
+      left: initial;
+      width: 18rem !important;
+      padding-left: var(--card-padding);
+      padding-right: 0;
+      box-shadow: 1rem 3rem 4rem var(--color-light);
+      z-index: 3;
+      background: var(--color-white);
+      display: none;
+      animation: showMenu 400ms ease forwards;
+   }
+
+   @keyframes showMenu{
+      from{
+         right: -100%;
+      }
+      to {
+         right: 0;
+      }
+   }
+   aside .logo h2{
+      padding-right: 2rem;
+   }
+   aside .sidebar a{
+      margin-right: 1rem;
+   }
+   aside .sidebar a.active{
+      width: 100% !important;
+      margin-left: 0;
+   }
+
+
+   .right .top button{
+      left: initial !important;
+      right: 1rem !important;
+   }
+   main .recent-orders{
+      width: 100% !important;
+      margin: 2rem 0 0 0 !important;
+   }
+}
+/* -------------------<< End Media Queries [Smaller Tablets & Mobiles] >>------------------- */
+/* ------------------- End Media Queries ------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
